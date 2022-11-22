@@ -37,7 +37,7 @@ class ProviderController extends ApiBaseController
      *    in="query",
      *    name="mobile",
      *    required=false,
-     *    example="0020111111112",
+     *    example="0020111111111",
      * ),
      * @OA\Parameter(
      *    description="status (paid, pending, reject , 100 , ... )",

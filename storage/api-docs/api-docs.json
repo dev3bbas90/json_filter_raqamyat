@@ -7,9 +7,6 @@
     "paths": {
         "/api/transactions": {
             "get": {
-                "tags": [
-                    "transactions"
-                ],
                 "description": "List all transactions",
                 "operationId": "c78b44f0ba90d66b5020d066641078ad",
                 "parameters": [
@@ -32,7 +29,7 @@
                         "in": "query",
                         "description": "mobile",
                         "required": false,
-                        "example": "0020111111112"
+                        "example": "0020111111111"
                     },
                     {
                         "name": "status",

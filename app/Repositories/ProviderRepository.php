@@ -21,10 +21,10 @@ class ProviderRepository implements ProviderInterface
 
     public function applyFilter($data , $request = [])
     {
-        $filterable_request_keys = [ "mobile" , "amount" , "currency" , "status" ];
+        $filterable_request_keys = [ "mobile2" , "mobile" , "amount" , "currency" , "status" ];
         foreach ($request as $key => $value)
         {
-            if(array_search($key , $filterable_request_keys)){
+            if(array_search($key , $filterable_request_keys) > 0){
                 $data = $data->where($key , $value);
             }
         }

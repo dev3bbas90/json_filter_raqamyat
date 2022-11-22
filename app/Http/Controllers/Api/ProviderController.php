@@ -67,4 +67,9 @@ class ProviderController extends ApiBaseController
         $transactions    =  $this->providerInterface->transactions($request->all());
         return $this->success($transactions);
     }
+
+    public function applyFilter($data , $request)
+    {
+        return $this->providerInterface->applyFilter($data , $request);
+    }
 }

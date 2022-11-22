@@ -3,14 +3,11 @@
 namespace Tests\Unit;
 
 use App\Http\Controllers\Api\ProviderController;
-use App\Interfaces\ProviderInterface;
 use App\Repositories\ProviderRepository;
 use App\Traits\fileTrait;
-use Mockery;
-// use PHPUnit\Framework\TestCase;
 use Tests\TestCase;
 
-class ExampleTest extends TestCase
+class ProviderTest extends TestCase
 {
     use fileTrait;
     /**
